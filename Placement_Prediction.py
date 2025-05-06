@@ -15,7 +15,7 @@ def main():
     </style>
     """, unsafe_allow_html=True)
 
-st.markdown('<div class="centered-image"><img src="placement_predict.png" width="300"></div>', unsafe_allow_html=True)
+   st.markdown('<div class="centered-image"><img src="placement_predict.png" width="300"></div>', unsafe_allow_html=True)
     st.title("Welcome to Placement Predictor")
     st.subheader("Prem Mohan - CGPA and Predicted LPA")
     # User input for CGPA
