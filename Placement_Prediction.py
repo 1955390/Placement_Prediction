@@ -14,7 +14,12 @@ def main():
     # Predict button
     if st.button("Predict"):
         result = model.predict([[cgpa]])[0]  # input should be a 2D list
-        st.success(f"Your predicted package would be: {result:.2f} LPA")  # 2 decimal places
+        try:
+            # Ensure result is a numeric type before formatting
+            result = float(result)  # Convert to float if necessary
+            st.success(f"Your predicted package would be: {result:.2f} LPA")  # 2 decimal places
+        except ValueError:
+            st.error("Prediction result is not valid. Please check the model or input data.")
 
 # Run the app
 if __name__ == '__main__':
