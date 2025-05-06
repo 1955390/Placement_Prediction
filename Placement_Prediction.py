@@ -6,7 +6,7 @@ model = joblib.load('place.pkl')
 
 def main():
   
-    st.title("Welcome to Placement Predictor")
+    st.title("Welcome to Placement Predictor 💰")
     st.subheader("Prem Mohan - CGPA and Predicted LPA")
     # User input for CGPA
     cgpa = st.slider("Choose your CGPA", min_value=0.0, max_value=10.0, step=0.1)
