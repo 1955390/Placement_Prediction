@@ -5,6 +5,17 @@ import joblib
 model = joblib.load('place.pkl')  
 
 def main():
+   st.markdown(
+    """
+    <style>
+    .centered-image {
+        display: flex;
+        justify-content: center;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+st.markdown('<div class="centered-image"><img src="placement_predict.png" width="300"></div>', unsafe_allow_html=True)
     st.title("Welcome to Placement Predictor")
     st.subheader("Prem Mohan - CGPA and Predicted LPA")
     # User input for CGPA
